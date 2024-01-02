@@ -1,0 +1,635 @@
+<!-- Default Appointment Section -->
+<div class="appointment-overview-area pb-100"
+    [ngClass]="{'d-none': router.url === '/' || router.url ==='/appointment;section=targetSection' ||router.url === '/tissueRegen'|| router.url === '/home'  || router.url === '/tissueRegen' ||  router.url === '/membership'  ||router.url === '/meetOurTeam'|| router.url === '/index-8' || router.url === '/appointment' || router.url === '/about-us-3'}">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-12">
+                <div class="appointment-overview-contact">
+                    <img src="assets/images/appointment/appointment-1.jpg" alt="appointment-image">
+                    <div class="appointment-info">
+                        <div class="call-info">
+                            <i class="flaticon-039-emergency-call"></i>
+                            Call Today
+                            <span>
+                                <a href="tel:088123654987">
+                                    +088 123 654 987
+                                </a>
+                            </span>
+                        </div>
+                        <p>Aenean sollicitudin, here lorem lorem quis auctor nisi elit lorem nec.</p>
+                        <a routerLink="/contact-us" class="default-btn">
+                            Contact Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-12">
+                <div class="appointment-overview-box">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="make-appointment-content">
+                                <h4>
+                                    <i class="flaticon-170-calendar-1"></i>
+                                    Make An Appointment
+                                </h4>
+                                <form>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Phone">
+                                    </div>
+                                    <button type="submit" class="default-btn">Book Appointment</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="content">
+                                <h4>We Are a Certified and Award-winning Hospital</h4>
+                                <div class="box-image">
+                                    <img src="assets/images/appointment/appointment-2.jpg" alt="appointment-image">
+                                    <!-- <button class="video-btn" (click)="openPopup()">
+                                        <i class='bx bx-play'></i>
+                                    </button> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- demo new -->
+<!-- <div class="contact-area bg-color pb-100 d-none"
+    [ngClass]="{'d-block': router.url === '/tissueRegen' ||router.url === '/meetOurTeam' || router.url === '/membership'}">
+    <div class="contact-area ptb-100">
+        <div class="container">
+            <div class="hospital-contact-form">
+                <div class="section-title with-hospital-color">
+                    <span class="sub-title">Let Us Help You</span>
+                    <h2>Have Queries Before The Appointment</h2>
+                </div>
+                <form>
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control" required placeholder="First Name">
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control" required placeholder="Last Name">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="form-group">
+                                <input type="email" name="email" class="form-control" required placeholder="Your email">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="form-group">
+                                <input type="text" name="phone_number" required class="form-control"
+                                    placeholder="Your phone">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="form-group">
+                                <label for="msg_subject">Primary Concern</label>
+                                <select name="msg_subject" id="msg_subject" class="form-control" required>
+                                    <option value="" class="toggle-link">Select a Concern</option>
+                                    <option value="Option 1">Acne & Acne Scars</option>
+                                    <option value="Option 2">Anti-Aging</option>
+                                    <option value="Option 3">Cellulite</option>
+                                    <option value="Option 4">Double Chin</option>
+                                    <option value="Option 5">Dry Skin</option>
+                                    <option value="Option 6">Hair Loss</option>
+                                    <option value="Option 7">Loose Body & Facial Skin</option>
+                                    <option value="Option 8">Muscle Weakness</option>
+                                    <option value="Option 9">Scar Repair</option>
+                                    <option value="Option 10">Stretch Marks</option>
+                                    <option value="Option 11">Stubborn Fat</option>
+                                    <option value="Option 12">Sun Spots</option>
+                                    <option value="Option 13">Toe Nail Fungus</option>
+                                    <option value="Option 14">Unwanted Hair</option>
+                                    <option value="Option 15">Wrinkles & Aging Skin</option>
+
+                                    Add more options as needed
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="form-group">
+                                <label for="msg_subject">Primary Treatment Of Intrest</label>
+                                <select name="msg_subject" id="msg_subject" class="form-control" required>
+                                    <option value="">Select a Treatment</option>
+                                    <option value="Option 1">Accent Prime</option>
+                                    <option value="Option 2">AviClear Acne Treatment</option>
+                                    <option value="Option 3">Botox</option>
+                                    <option value="Option 4">Cellulite Reduction</option>
+                                    <option value="Option 5">Chemical Peels</option>
+                                    <option value="Option 6">ClearLift</option>
+                                    <option value="Option 7">Diamond Glow</option>
+                                    <option value="Option 8">Dye-VL</option>
+                                    <option value="Option 9">Fat Reduction</option>
+                                    <option value="Option 10">Hair Restoration</option>
+                                    <option value="Option 11">Harmony XL Pro</option>
+                                    <option value="Option 12">Hybrid CO2</option>
+                                    <option value="Option 13">IV Vitamin Therapy</option>
+                                    <option value="Option 14">Juvederm Voluma XC</option>
+                                    <option value="Option 15">Juvederm Volbella XC'</option>
+                                    <option value="Option 16">Kybella</option>
+                                    <option value="Option 17">Laser Hair Removal</option>
+                                    <option value="Option 18">Micro-Needling</option>
+                                    <option value="Option 19">Opus</option>
+                                    <option value="Option 20">Tattoo Removal</option>
+                                    <option value="Option 21">TED Hair Restoration</option>
+                                    <option value="Option 22">TruSculpt Flex</option>
+                                    <option value="Option 23">TruSculpt ID</option>
+                                    <option value="Option 15">TED Hair Restoration</option>
+                                    Add more options as needed
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="form-group">
+                                <label for="msg_subject">Where Are You In The Decision Making Process</label>
+                                <select name="msg_subject" id="msg_subject" class="form-control" required>
+                                    <option value="" class="toggle-link">Where Are You In The Decision Making Process</option>
+                                    <option value="Option 1" class="toggle-link">Make Your Selection</option>
+                                    <option value="Option 2">I have no idea what I need/want</option>
+                                    <option value="Option 3">I've researched a little but not sure</option>
+                                    <option value="Option 4">I've researched but have more questions</option>
+                                    <option value="Option 5">I know what I am looking for</option>
+                                    Add more options as needed
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-sm-12">
+                            <div class="form-group">
+                                <textarea name="message" class="form-control" cols="30" rows="5" required
+                                    placeholder="Your message"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-sm-12">
+                            <button type="submit" class="default-btn">Send Message</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<!-- Appointment Section for Home Demo - 2 -->
+<div class="appointment-area bg-color pb-100 d-none" [ngClass]="{'d-block': router.url === '/index-2'}">
+    <div class="container">
+        <div class="appointment-inner-box"
+            style="background-image: url(assets/images/appointment/appointment-bg-1.jpg);">
+            <div class="appointment-form">
+                <h4>
+                    <i class="flaticon-170-calendar-1"></i>
+                    Make An Appointment
+                </h4>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Phone">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Date" bsDatepicker>
+                    </div>
+                    <button type="submit" class="default-btn">Book Appointment</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Appointment Section for Home Demo - 3 -->
+<div class="appointment-area d-none"
+    [ngClass]="{'d-block': router.url === '/home'|| router.url ==='/appointment;section=targetSection' || router.url === '/appointment' ||router.url === '/'||  router.url === '/tissueRegen' ||router.url === '/meetOurTeam' || router.url === '/membership'}">
+    <!-- <div class="container">
+        <div class="appointment-form">
+            <h4>
+                <i class="flaticon-170-calendar-1"></i>
+                Make An Appointment
+            </h4>
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Phone">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Date" bsDatepicker>
+                </div>
+                <button type="submit" class="default-btn">Book Appointment</button>
+            </form>
+        </div>
+    </div> -->
+    <!-- <div
+    class="page-banner-area three ptb-100"
+    style="background-image: url(assets/images/hospital/page-banner/bg-3.jpg);">
+    <div class="container">
+        <div class="page-banner-content">
+            <h2>Contact Us</h2>
+            <ul class="pages-list">
+                <li><a routerLink="/home">Home</a></li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+    </div>
+</div> -->
+    <div class="contact-area ptb-100">
+        <div class="container">
+            <div class="hospital-contact-form">
+                <div class="section-title with-hospital-color">
+                    <span class="sub-title">Let Us Help You</span>
+                    <h2>Book An Appointment</h2>
+                </div>
+                <form [formGroup]="appointmentForm"  (ngSubmit)="send()">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control" formControlName="firstname" required placeholder="First Name">
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control" formControlName="lastname" required placeholder="Last Name">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="form-group">
+                                <input type="email" name="email" class="form-control" formControlName="email" required placeholder="Your email">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="form-group">
+                                <input type="text" name="phone_number" formControlName="phonenumber" required class="form-control"
+                                    placeholder="Your phone">
+                            </div>
+                        </div>
+                        <!-- ... other HTML code ... -->
+
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="form-group">
+                                <label for="msg_subject">Choose a treatment</label>
+                                <select name="msg_subject" id="msg_subject" class="form-control" required
+                                    formControlName="treatment">
+                                    <option value="" class="toggle-link">Select a treatment</option>
+                                    <option value="Osteoarthritis Treatment">Osteoarthritis Treatment</option>
+                                    <option value="Spa Treatment">Spa Treatment</option>
+                                    <option value="softWave">Softwave Therapy</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-sm-6">
+                            <div *ngIf="isOsteoSelected()">
+                                <div class="form-group">
+                                    <label for="osteo_options">Osteoarthritis Options</label>
+                                    <select formControlName="osteoOptions" class="form-control">
+                                        <option class="toggle-link">Select an option</option>
+                                        <option >Knee</option>
+                                        <option >Shoulder</option>
+                                        <option >Hip</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div *ngIf="isSpaSelected()">
+                                <div class="form-group">
+                                    <label for="spa_options">Spa Options</label>
+                                    <select formControlName="spaOptions" class="form-control">
+                                        <option  class="toggle-link">Select an option</option>
+                                        <option>PRF fillers</option>
+                                        <option>Beauty Model/Face</option>
+                                        <option>Cosmetics</option>
+                                        <option>Hair removal</option>
+                                        <option>Hair Restoration</option>
+                                        <option>Sexual Health</option>
+                                        <option>Weight Loss</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div *ngIf="isSoftwaveSelected()">
+                                <div class="form-group">
+                                    <label for="spa_options">Softwave Options</label>
+                                    <select formControlName="softWaveOptions" class="form-control">
+                                        <option  class="toggle-link">Select an option</option>
+                                        <option>OrthoGold</option>
+                                        <option>UroGold</option>
+                                        <option>DermaGold</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ... other HTML code ... -->
+                        <!-- <div class="col-lg-6 col-sm-6"> -->
+                            <div class="form-group">
+                                <label for="msg_subject">Where Are You In The Decision Making Process</label>
+                                <select name="msg_subject" formControlName="decision" id="msg_subject" class="form-control" required>
+                                    <!-- <option value="" class="toggle-link">Where Are You In The Decision Making Process</option> -->
+                                    <option  class="toggle-link">Make Your Selection</option>
+                                    <option >I have no idea what I need/want</option>
+                                    <option >I've researched a little but not sure</option>
+                                    <option >I've researched but have more questions</option>
+                                    <option >I know what I am looking for</option>
+                                    <!-- Add more options as needed -->
+                                </select>
+                            </div>
+                        <!-- </div> -->
+                        <div class="col-lg-12 col-sm-12">
+                            <div class="form-group">
+                                <textarea name="message" formControlName="message" class="form-control" cols="30" rows="5" required
+                                    placeholder="Your message"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-sm-12">
+                            <div class="form-group">
+                              <input type="checkbox" name="check" formControlName="check" (change)="onCheckboxChange()">
+                              <label for="check">&nbsp;&nbsp;&nbsp;&nbsp;I AGREE TO THE TERMS OF USE AND MARKETING CONSENT</label>
+                            </div>
+                            <p>By checking the box on the appointment form, you agree to the Terms of Use and Marketing Consent listed here: Communication through our website or via email are not encrypted and are not necessarily secure. Use of the internet or email is for your convenience only, and by using them, you assume the risk of unauthorized use. You hereby agree to hold Modern Regenerative Health, its doctors and affiliates, harmless from any hacking or any other unauthorized use of your personal information by outside parties. You also agree to opt-in to future marketing communications via SMS or Email.</p>
+                            <p class="checkError" *ngIf="!checkboxChecked || (appointmentForm.get('check')?.errors?.['required'] && appointmentForm.get('check')?.touched)">
+                                *Agree to the terms & conditions to submit your query.
+                            </p>
+                          </div>
+                        <div class="col-lg-12 col-sm-12">
+                            <button type="submit" value="Submit" class="default-btn">Send Message</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Appointment Section for Home Demo - 4 -->
+<div class="dental-tourism-appointment-area ptb-100 d-none"
+    [ngClass]="{'d-block': router.url === '/index-4' || router.url === '/about-us-3'}"
+    style="background-image: url(assets/images/dental-tourism/appointment/appointment-bg.jpg);">
+    <div class="container">
+        <div class="dental-tourism-appointment-form">
+            <h4>
+                <i class="flaticon-170-calendar-1"></i>
+                Make An Appointment
+            </h4>
+            <form>
+                <div class="row">
+                    <div class="col-lg-12 col-sm-6">
+                        <div class="form-group">
+                            <select>
+                                <option value="1">Select a Procedure</option>
+                                <option value="2">General Dentistry</option>
+                                <option value="3">Cosmetic Dentistry</option>
+                                <option value="4">Dental Implants</option>
+                                <option value="5">Orthodontics</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Enter Name">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Enter Email">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="form-group">
+                            <input type="number" class="form-control" placeholder="Phone Number">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Appointment Date" bsDatepicker>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="form-group">
+                            <select>
+                                <option value="1">Select Country</option>
+                                <option value="2">Finland</option>
+                                <option value="3">Denmark</option>
+                                <option value="4">Norway</option>
+                                <option value="5">Belgium</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Country Code">
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-sm-12">
+                        <div class="form-group">
+                            <textarea name="message" class="form-control" cols="30" rows="4"
+                                placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-sm-12">
+                        <button type="submit" class="default-btn">Book An Appointment</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Appointment Section for Home Demo - 5 -->
+<div class="skin-care-appointment-area d-none" [ngClass]="{'d-block': router.url === '/home'}">
+    <div class="container-fluid">
+        <div class="row m-0">
+            <!-- <div class="col-lg-6 col-md-12 p-0">
+                <div class="skin-care-appointment-image"
+                    style="background-image: url(assets/images/skin-care/appointment/appointment.jpg);">
+                    <img src="assets/images/skin-care/appointment/appointment.jpg" alt="appointment-image">
+                </div>
+            </div> -->
+            <!-- <div class="col-lg-6 col-md-12 p-0">
+                <div class="skin-care-appointment-form">
+                    <h4>
+                        <i class="flaticon-170-calendar-1"></i>
+                        Make An Appointment
+                    </h4>
+                    <form>
+                        <div class="row">
+                            <div class="col-lg-12 col-sm-6">
+                                <div class="form-group">
+                                    <select>
+                                        <option value="1">Select a Procedure</option>
+                                        <option value="2">General Dentistry</option>
+                                        <option value="3">Cosmetic Dentistry</option>
+                                        <option value="4">Dental Implants</option>
+                                        <option value="5">Orthodontics</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Enter Name">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Enter Email">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="form-group">
+                                    <input type="number" class="form-control" placeholder="Phone Number">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Appointment Date" bsDatepicker>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="form-group">
+                                    <select>
+                                        <option value="1">Select Country</option>
+                                        <option value="2">Finland</option>
+                                        <option value="3">Denmark</option>
+                                        <option value="4">Norway</option>
+                                        <option value="5">Belgium</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Country Code">
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="form-group">
+                                    <textarea name="message" class="form-control" cols="30" rows="4" placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <button type="submit" class="default-btn two">Book An Appointment</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+            <!-- Appointment Section for Home Demo - 8 -->
+            <div class="hospital-appointment-area ptb-100 d-none" [ngClass]="{'d-block': router.url === '/index-8'}"
+                style="background-image: url(assets/images/hospital/appointment-bg.jpg);">
+                <div class="container">
+                    <div class="section-title with-hospital-color">
+                        <span class="sub-title">Appointment</span>
+                        <h2>Request An Appointment</h2>
+                    </div>
+                    <div class="hospital-appointment-form">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Name">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Phone">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="form-group">
+                                    <select>
+                                        <option value="1">Select Service</option>
+                                        <option value="2">Prosthodontics Dentist</option>
+                                        <option value="3">Aesthetic Dentistry</option>
+                                        <option value="4">Gastroenterologists</option>
+                                        <option value="5">Endocrinologists</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="form-group">
+                                    <select>
+                                        <option value="1">Select Department</option>
+                                        <option value="2">Prosthodontics Dentist</option>
+                                        <option value="3">Aesthetic Dentistry</option>
+                                        <option value="4">Gastroenterologists</option>
+                                        <option value="5">Endocrinologists</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="form-group">
+                                    <select>
+                                        <option value="1">Doctor Name</option>
+                                        <option value="2">Addison Smith</option>
+                                        <option value="3">Liam Mason</option>
+                                        <option value="4">Aiken Ward</option>
+                                        <option value="5">Ena Dicrosa</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Date" bsDatepicker>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="form-group">
+                                    <select>
+                                        <option value="1">Select Time</option>
+                                        <option value="2">8:00 - 22:00</option>
+                                        <option value="3">8:00 - 22:00</option>
+                                        <option value="4">8:00 - 22:00</option>
+                                        <option value="5">8:00 - 22:00</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                                <button type="submit" class="default-btn">Submit Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Popup -->
+            <div class="video-popup" *ngIf="isOpen">
+                <div class="popup-inner">
+                    <iframe src="https://www.youtube.com/embed/XNQk1qt__Vw"
+                        title="Setup and Local Installation - React Nextjs Online Yoga Coaching &amp; Training Courses System"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <button (click)="closePopup()" type="button" class="close-btn">
+                        <i class='bx bx-x'></i>
+                    </button>
+                </div>
+            </div>

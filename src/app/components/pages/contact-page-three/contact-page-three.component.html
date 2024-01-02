@@ -1,0 +1,186 @@
+<!-- Page Banner -->
+<div
+    class="page-banner-area three ptb-100"
+    style="background-image: url(../../../../assets/images/bannerImgs/Contact\ Us.png);
+    width: 100%; height: 82vh; object-fit: contain; overflow: hidden"
+>
+    <div class="container">
+        <div class="page-banner-content">
+            <h2>Contact Us</h2>
+            <ul class="pages-list">
+                <li><a routerLink="/home">Home</a></li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Us -->
+<div class="contact-area ptb-100">
+    <div class="container">
+        <div class="hospital-contact-form">
+            <div class="section-title with-hospital-color">
+                <span class="sub-title">Let Us Help You</span>
+                <h2>Have Queries Before The Appointment</h2>
+                <!-- <a href="mailto:shanmugam121996@gmail.com?subject=hi&body=hello">Send Email</a> -->
+            </div>
+
+            <!-- (ngSubmit)="send()" -->
+            <form [formGroup]="reactiveForms" (ngSubmit)="send()">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" formControlName="firstname" required placeholder="First Name">
+                        </div>
+                      
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="form-group">
+                            <input type="text" name="lastname" class="form-control" formControlName="lastname" required placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control" formControlName="email" required placeholder="Your email">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="form-group">
+                            <input type="tel" name="phone_number" required class="form-control" formControlName="phonenumber" placeholder="Your phone">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="form-group">
+                            <label for="msg_subject">Primary Concern</label>
+                            <select name="msg_subject" id="msg_subject" formControlName="primeconcern" class="form-control" required>
+                                <option class="toggle-link">Select a Concern</option>
+                                <option >Acne & Acne Scars</option>
+                                <option>Anti-Aging</option>
+                                <option>Cellulite</option>
+                                <option>Double Chin</option>
+                                <option>Dry Skin</option>
+                                <option>Hair Loss</option>
+                                <option>Loose Body & Facial Skin</option>
+                                <option>Muscle Weakness</option>
+                                <option>Scar Repair</option>
+                                <option>Stretch Marks</option>
+                                <option >Stubborn Fat</option>
+                                <option>Sun Spots</option>
+                                <option >Toe Nail Fungus</option>
+                                <option>Unwanted Hair</option>
+                                <option>Wrinkles & Aging Skin</option>
+
+                                <!-- Add more options as needed -->
+                            </select>
+                        </div>                        
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="form-group">
+                            <label for="msg_subject">Primary Treatment Of Intrest</label>
+                            <select name="msg_subject" id="msg_subject" formControlName="treatmentintrest" class="form-control" required>
+                                <option>Select a Treatment</option>
+                                <option >Accent Prime</option>
+                                <option>AviClear Acne Treatment</option>
+                                <option>Botox</option>
+                                <option>Cellulite Reduction</option>
+                                <option>Chemical Peels</option>
+                                <option>ClearLift</option>
+                                <option>Diamond Glow</option>
+                                <option>Dye-VL</option>
+                                <option>Fat Reduction</option>
+                                <option>Hair Restoration</option>
+                                <option>Harmony XL Pro</option>
+                                <option>Hybrid CO2</option>
+                                <option >IV Vitamin Therapy</option>
+                                <option>Juvederm Voluma XC</option>
+                                <option>Juvederm Volbella XC'</option>
+                                <option>Kybella</option>
+                                <option >Laser Hair Removal</option>
+                                <option >Micro-Needling</option>
+                                <option>Opus</option>
+                                <option>Tattoo Removal</option>
+                                <option>TED Hair Restoration</option>
+                                <option>TruSculpt Flex</option>
+                                <option>TruSculpt ID</option>
+                                <!-- <option value="Option 15">TED Hair Restoration</option> -->
+                                <!-- Add more options as needed -->
+                            </select>
+                        </div>        
+                    </div>
+                    <div class="col-lg-12 col-sm-12">
+                        <div class="form-group">
+                            <label for="msg_subject">Where Are You In The Decision Making Process</label>
+                            <select name="msg_subject" id="msg_subject" formControlName="decision"  class="form-control" required>
+                                <!-- <option value="" class="toggle-link">Where Are You In The Decision Making Process</option> -->
+                                <option class="toggle-link">Make Your Selection</option>
+                                <option >I have no idea what I need/want</option>
+                                <option >I've researched a little but not sure</option>
+                                <option >I've researched but have more questions</option>
+                                <option >I know what I am looking for</option>
+                                <!-- Add more options as needed -->
+                            </select>
+                        </div>                        
+                    </div>
+                    <div class="col-lg-12 col-sm-12">
+                        <div class="form-group">
+                            <textarea name="message" formControlName="message" class="form-control" cols="30" rows="5" required placeholder="Your message"></textarea>
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-12 col-sm-12">
+                        <div class="form-group">
+                            <input type="checkbox" name="check" formControlName="check">
+                            <label for="check">&nbsp;&nbsp;&nbsp;&nbsp;I AGREE TO THE TERMS OF USE AND MARKETING CONSENT</label>
+                        </div>                          
+                    </div>
+                     <div class="col-lg-12 col-sm-12">
+                        <p>By checking the box on the contact form, you agree to the Terms of Use and Marketing Consent listed here: Communication through our website or via email are not encrypted and are not necessarily secure. Use of the internet or email is for your convenience only, and by using them, you assume the risk of unauthorized use. You hereby agree to hold Coastal Aesthetics, its doctors and affiliates, harmless from any hacking or any other unauthorized use of your personal information by outside parties. You also agree to opt-in to future marketing communications via SMS or Email.</p>
+                    </div>
+                    <div class="col-lg-12 col-sm-12">
+                        <small *ngIf="reactiveForms.get('check')?.errors?.['required'] && reactiveForms.get('check')?.touched">
+                            * Checkbox is a required field
+                        </small>
+                    </div> -->
+                    <div class="col-lg-12 col-sm-12">
+                        <div class="form-group">
+                          <input type="checkbox" name="check" formControlName="check" (change)="onCheckboxChange()">
+                          <label for="check">&nbsp;&nbsp;&nbsp;&nbsp;I AGREE TO THE TERMS OF USE AND MARKETING CONSENT</label>
+                        </div>
+                        <p>By checking the box on the contact form, you agree to the Terms of Use and Marketing Consent listed here: Communication through our website or via email are not encrypted and are not necessarily secure. Use of the internet or email is for your convenience only, and by using them, you assume the risk of unauthorized use. You hereby agree to hold Modern Regenerative Health, its doctors and affiliates, harmless from any hacking or any other unauthorized use of your personal information by outside parties. You also agree to opt-in to future marketing communications via SMS or Email.</p>
+                        <p class="checkError" *ngIf="!checkboxChecked || (reactiveForms.get('check')?.errors?.['required'] && reactiveForms.get('check')?.touched)">
+                            *Agree to the terms & conditions to submit your query.
+                        </p>
+                         
+                    
+                      </div>
+                      
+                      
+                    
+                    <!-- <div class="page-banner-area osteoText ptb-100">
+                        <div class="container">
+                            <p>By checking the box on the contact form, you agree to the Terms of Use and Marketing Consent listed here: Communication through our website or via email are not encrypted and are not necessarily secure. Use of the internet or email is for your convenience only, and by using them, you assume the risk of unauthorized use. You hereby agree to hold Coastal Aesthetics, its doctors and affiliates, harmless from any hacking or any other unauthorized use of your personal information by outside parties. You also agree to opt-in to future marketing communications via SMS or Email.</p>
+                        </div>
+                    </div> -->
+                    <div class="col-lg-12 col-sm-12">
+                        <button type="submit" value="Submit" class="default-btn">Send Message</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<app-contact-info></app-contact-info>
+
+<!-- <div class="contact-area ptb-100">
+    <div class="container">
+        <div class="d-flex flex-row">
+            <div class="col-lg-6 col-sm-6 p-3">
+                <iframe src="https://www.google.com/maps/place/155+Main+Dunstable+Rd,+Nashua,+NH+03060,+USA/@42.7470459,-71.4895332,17z/data=!3m1!4b1!4m6!3m5!1s0x89e3b747fc2172e9:0xb93a4783ab8beff6!8m2!3d42.7470459!4d-71.4895332!16s%2Fg%2F11b8v4q177?entry=ttu" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-lg-6 col-sm-6 p-3">
+                <iframe src="https://www.google.com/maps/place/1+Stiles+Rd,+Salem,+NH+03079,+USA/@42.7748602,-71.2492616,17z/data=!3m1!4b1!4m6!3m5!1s0x89e3abcfae6ff085:0xb02f36e8f0c1714d!8m2!3d42.7748602!4d-71.2492616!16s%2Fg%2F11b8v40x3g?entry=ttu"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- <iframe src="https://www.google.com/maps/place/1+Stiles+Rd,+Salem,+NH+03079,+USA/@42.7748602,-71.2492616,17z/data=!3m1!4b1!4m6!3m5!1s0x89e3abcfae6ff085:0xb02f36e8f0c1714d!8m2!3d42.7748602!4d-71.2492616!16s%2Fg%2F11b8v40x3g?entry=ttu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
